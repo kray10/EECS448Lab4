@@ -1,0 +1,50 @@
+<html>
+
+  <head>
+    <title>Jedi's R Us</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="formChecker.js"></script>
+  </head>
+
+  <center>
+    <body>
+      <h1>Welcome To Jedi's R Us</h1>
+      <form action="customerBackend.php" method="POST" onsubmit="return validateForm(this)">
+        <div class="userInfo">
+          <h2>User Information</h2>
+          User Name
+          <input type="text" name="userName" value=""><br>
+          Password
+          <input type="text" name="password" value="">
+          <br><br>
+        </div><br>
+        <div>
+          <h2>Items for Sale</h2>
+          Light Sabers ($100)<br>Quatinity
+          <input type="text" name="lightSabers" value="" style="width:55px;"> <br>
+          <br>Jedi Robes ($20)<br>Quatinity
+          <input type="text" name="robes" value="" style="width:55px;"><br>
+          <br>Artificial Appendages ($50)<br>Quatinity
+          <input type="text" name="appendages" value="" style="width:55px;"><br><br>
+        </div>
+
+        <div class="shipping">
+          <h2>Shipping Options</h2>
+          <input type="radio" name="shipping" value="sevenDay">Free 7 Day Shipping</input><br>
+          <input type="radio" name="shipping" value="overNight">$50.00 Over Night Shipping</input><br>
+          <input type="radio" name="shipping" value="threeDay">$5.00 Three Day Shipping</input><br>
+          <br>
+        </div><br>
+
+        <div class="button">
+          <br>
+          <input style="width: 75px;" type="submit" name="submit" value="Submit">
+          <button style="width: 75px;" type="button" onclick="reset(this)">Reset</button>
+          <br><br>
+        </div>
+      </form>
+    </body>
+  </center>
+
+
+</html>
